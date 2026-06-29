@@ -54,7 +54,7 @@ body {
   font-weight: 400;
 }
 
-.price-block {
+.product-card__price-block {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
