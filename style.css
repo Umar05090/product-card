@@ -69,3 +69,22 @@ body {
 .product-card__product-name {
   font-size: 20px;
 }
+
+/* Начальный вид и цвет твоей кнопки (например, фиолетовый) */
+.color-btn {
+    display: block;
+    margin: 40px auto; /* отцентрует кнопку под карточками */
+    background-color: #8a2be2; 
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* чтобы цвет менялся плавно */
+}
+
+/* Цвет, который включится через JS при клике (например, коралловый) */
+.color-btn.active {
+    background-color: #ff7f50;
+}
