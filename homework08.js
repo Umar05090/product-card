@@ -43,7 +43,7 @@ const marvelBooks = [
 const allBooks = [...books,...marvelBooks];
 
 function checkRarity(allBooksArray) {
-  return allBooksArray .map(book => {
+  return allBooksArray.map(book => {
     const bookCopy = {...book};
     if (bookCopy.year < 2000) {
       bookCopy.isRare = true;
@@ -52,3 +52,13 @@ function checkRarity(allBooksArray) {
     return bookCopy;
   });
 }
+
+
+
+
+
+
+
+
+
+
