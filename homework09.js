@@ -1,7 +1,7 @@
 import { socialComments } from './comments.js';
 
 // 1. Фильтрация массива чисел
-const numbers = [1,2,3,4,5,6,7,8,9,10];
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const filteredNumbers = numbers.filter(num => num >= 5);
 console.log('Отфильтрованные числа:', filteredNumbers); 
 // Выведет: [5, 6, 7, 8, 9, 10]
@@ -73,3 +73,98 @@ console.log('Через JSON.stringify():', stringFromToString);
 
 const stringFromJoin = simplifiedComments.map(c => `[ID: ${c.id}, Name: ${c.name}]`).join(' | ');
 console.log('Через join():', stringFromJoin);
+
+
+
+
+
+
+
+const prices = [100, 450, 700, 1200, 300, 900];
+const budgetFriendly = prices.filter (price => price < 500);
+
+const films = ["Harry Potter","Spider Man","Hobbit","Avengers"];
+const hasHarryPotter = films.includes ("Harry Potter");
+console.log(hasHarryPotter);
+
+
+
+const ages = [12, 18, 25, 40, 10, 33];
+const hasAdults = ages.filter (item => item >= 18);
+console.log(hasAdults);
+
+const fruits = ["яблоко", "апельсин", "груша", "арбуз"];
+const hasWatermelon = fruits.includes("арбуз");
+console.log(hasWatermelon);
+
+function reverseArray(arr) {
+  return [...arr]. reverse ();
+};
+const reverseFruits = reverseArray(fruits);
+console.log(reverseFruits);
+
+
+
+
+
+
+
+
+
+const comComments = socialComments.filter(comment => {
+  return comment.email.includes('.com')
+});
+
+const updateComments = socialComments.map(comment => {
+  if (comment <= 5) {
+    return {...comment, postId: 2 };
+  } else {
+    return {...comment, postId: 1}
+}
+  })
+
+
+
+
+
+const products = [
+  { id: 1, title: "Смартфон", price: 500, category: "electronics" },
+  { id: 2, title: "Кроссовки", price: 120, category: "clothes" },
+  { id: 3, title: "Ноутбук", price: 1200, category: "electronics" },
+  { id: 4, title: "Футболка", price: 30, category: "clothes" }
+];
+
+const electronicsProducts = products.filter(products => electornics);
+const expensiveProducts = products.map(product => { 
+  return { ...product, price: product.price * 2 } });
+
+
+
+
+
+
+
+
+
+
+
+
+  const ages = [12, 18, 25, 14, 30, 42, 16];
+  const adultAges = ages.filter(item => item >= 18);
+
+  const films =["Harry Potter", "Spider Man", "Hobbit"];
+  const hasHarryPotter = films.includes('Harry Potter');
+
+  function getLastElement(arr) {
+    return [...arr]  
+  }
+
+
+
+  const users = [
+    { id: 1, name: "Пётр", role: "user", age: 15 },
+    { id: 2, name: "Василий", role: "admin", age: 25 },
+    { id: 3, name: "Мария", role: "user", age: 17 }
+];
+
+const onlyUsers = user.filter(item => item.role === 'user');
