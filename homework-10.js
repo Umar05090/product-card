@@ -24,10 +24,18 @@ function createCardElement(product) {
   return cardClone;
 }
 
-const productDescriptionsMap = products.reduce((acc, currentProduct) => {
- acc[currentProduct.title] = currentProduct.description;
+const productDescriptions = products.reduce((acc, product) => {
+  
+  const productObj = {
+    [product.title]: product.description
+  };
+  
+  acc.push(productObj);
+
   return acc;
-}, {}); 
+}, []); 
+
+console.log(productDescriptions);
 
 function getCardsCount() {
   const input = prompt("Сколько карточек отобразить? От 1 до 5");
@@ -63,3 +71,14 @@ function renderCards(productsArray) {
 }
 
 renderCards(products);
+
+
+
+
+
+
+
+
+
+
+
