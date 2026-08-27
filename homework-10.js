@@ -25,12 +25,9 @@ function createCardElement(product) {
 }
 
 const productDescriptionsMap = products.reduce((acc, currentProduct) => {
-  acc.push({
-    title: currentProduct.title,
-    description: currentProduct.description
-  });
+ acc[currentProduct.title] = currentProduct.description;
   return acc;
-}, []);
+}, {}); 
 
 function getCardsCount() {
   const input = prompt("Сколько карточек отобразить? От 1 до 5");
