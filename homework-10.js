@@ -71,14 +71,3 @@ function renderCards(productsArray) {
 }
 
 renderCards(products);
-
-
-
-
-
-
-
-
-
-
-
